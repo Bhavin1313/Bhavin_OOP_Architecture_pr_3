@@ -18,7 +18,8 @@ class Supermarket {
       for (var item in items) {
         print('Item ID: ${item.id}');
         print('Name: ${item.name}');
-        print('Price: /-${item.price.toStringAsFixed(2)}');
+        print('Price: ${item.price.toStringAsFixed(2)}/-');
+        print('Quantity : ${item.quantity}');
         print('-------------------');
       }
     }
@@ -47,7 +48,7 @@ class Supermarket {
     int quantity = int.parse(stdin.readLineSync()!);
     double totalPrice = item.price * quantity;
 
-    customer.cart.add(Item(item.id, item.name, totalPrice));
+    customer.cart.add(Item(item.id, item.name, totalPrice, quantity));
     print('Item added to cart successfully.\n');
   }
 
