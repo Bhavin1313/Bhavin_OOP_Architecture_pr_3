@@ -1,4 +1,4 @@
-/1. WAP to take a list using named parameter and return sum of all elements of list./
+/*1. WAP to take a list using named parameter and return sum of all elements of list.*/
 import 'dart:io';
 
 class Sum {
