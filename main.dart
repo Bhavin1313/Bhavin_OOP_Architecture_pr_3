@@ -6,15 +6,16 @@ import 'dart:io';
 void main() {
   Supermarket supermarket = Supermarket();
 
-  supermarket.items.add(Item(1, 'T-shirt', 1599));
-  supermarket.items.add(Item(2, 'Jeans', 2099));
-  supermarket.items.add(Item(3, 'Wheat', 749));
-  supermarket.items.add(Item(4, 'Oil', 1249));
-  supermarket.items.add(Item(5, 'Shampoo', 249));
-  supermarket.items.add(Item(6, 'Perfume', 799));
-  supermarket.items.add(Item(7, 'Biscuit', 49));
-  supermarket.items.add(Item(8, 'Cold drinks', 199));
-  supermarket.items.add(Item(9, 'Maggie', 10));
+  supermarket.items.add(Item(1, 'T-shirt', 1599, 150));
+  supermarket.items.add(Item(2, 'Jeans', 2099, 600));
+  supermarket.items.add(Item(3, 'Wheat', 749, 2000));
+  supermarket.items.add(Item(4, 'Oil', 1249, 750));
+  supermarket.items.add(Item(5, 'Shampoo', 249, 500));
+  supermarket.items.add(Item(6, 'Perfume', 799, 400));
+  supermarket.items.add(Item(7, 'Biscuit', 49, 900));
+  supermarket.items.add(Item(8, 'Cold drinks', 199, 3000));
+  supermarket.items.add(Item(9, 'Maggie', 10, 1500));
+  supermarket.items.add(Item(10, 'Egg', 10, 2500));
 
   while (true) {
     print('--- Supermarket Billing System ---');
